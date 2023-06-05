@@ -3,29 +3,30 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #333;
+    background-color: #0D1117;
     font-family: Arial, sans-serif;
 }
 
 .calculator {
     width: 300px;
     border-radius: 25px;
-    background-color: #444;
+    background-color: #161B22;
     padding: 20px;
     box-shadow: 0px 10px 20px 0px rgba(255,255,255,0.1);
-    color: #fff;
+    color: #C9D1D9;
 }
 
 .calculator input, #history {
     width: 100%;
-    text-align: right;
+    text-align: center;
     margin-bottom: 20px;
-    padding-right: 20px;
+    padding: 20px;
     font-size: 24px;
     border: none;
     outline: none;
-    background-color: #555;
-    color: #fff;
+    background-color: #21262D;
+    color: #C9D1D9;
+    border-radius: 50px; /* Capsule shape for the display */
 }
 
 .calculator .keys {
@@ -39,50 +40,37 @@ body {
     font-size: 20px;
     border: none;
     outline: none;
-    background-color: #666;
-    color: #fff;
+    background-color: #30363D;
+    color: #C9D1D9;
     border-radius: 15px;
-    box-shadow: 0px 5px 10px 0px rgba(255,255,255,0.1);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
 }
 
 .calculator button:active {
-    box-shadow: 0px 2px 5px 0px rgba(255,255,255,0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
     transform: scale(0.98);
 }
 
-.calculator button:nth-child(4n) {
-    background-color: #777;
-    color: #fff;
+.calculator button.operation {
+    background-color: #58A6FF;
+    color: #0D1117;
 }
 
-.calculator button:nth-last-child(1), .calculator button:nth-last-child(2), .calculator button:nth-last-child(3), .calculator button:nth-last-child(4) {
-    background-color: #888;
-    color: #fff;
+.calculator button.clear {
+    background-color: #C9D1D9;
+    color: #0D1117;
 }
 
-#cheat-sheet {
-    margin-top: 20px;
-    border-top: 1px solid #888;
-    padding-top: 10px;
-    color: #fff;
-    background-color: #444;
-    font-size: 20px;
-}
-.calculator button:nth-last-child(1), .calculator button:nth-last-child(2), .calculator button:nth-last-child(3) {
-    background-color: #888;
-    color: #fff;
-}
-
-.calculator button:nth-last-child(4) {
-    background-color: #4a69af;
-    color: #fff;
+.calculator button.equals {
+    background-color: #1F6FEB;
+    color: #0D1117;
 }
 
 #trig-keys {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #trig-keys button {
@@ -90,13 +78,30 @@ body {
     font-size: 20px;
     border: none;
     outline: none;
-    background-color: #666;
-    color: #fff;
+    background-color: #30363D;
+    color: #C9D1D9;
     border-radius: 15px;
-    box-shadow: 0px 5px 10px 0px rgba(255,255,255,0.1);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
 }
 
 #trig-keys button:active {
-    box-shadow: 0px 2px 5px 0px rgba(255,255,255,0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
     transform: scale(0.98);
+}
+
+#trig-keys button.operation {
+    background-color: #58A6FF;
+    color: #0D1117;
+}
+
+#cheat-sheet {
+    margin-top: 20px;
+    border-top: 1px solid #30363D;
+    padding-top: 10px;
+    color: #C9D1D9;
+    background-color: #161B22;
+    font-size: 20px;
+}
+#history {
+    display: none;
 }
