@@ -3,28 +3,29 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #eff2f7;
+    background-color: #333;
     font-family: Arial, sans-serif;
 }
 
 .calculator {
     width: 300px;
     border-radius: 25px;
-    background-color: #fff;
+    background-color: #444;
     padding: 20px;
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 20px 0px rgba(255,255,255,0.1);
+    color: #fff;
 }
 
-.calculator input {
+.calculator input, #history {
     width: 100%;
-    height: 80px;
     text-align: right;
     margin-bottom: 20px;
     padding-right: 20px;
-    font-size: 36px;
+    font-size: 24px;
     border: none;
     outline: none;
-    background-color: #e5e7ed;
+    background-color: #555;
+    color: #fff;
 }
 
 .calculator .keys {
@@ -38,43 +39,32 @@ body {
     font-size: 20px;
     border: none;
     outline: none;
-    background-color: #c7c9d9;
-    color: #333;
+    background-color: #666;
+    color: #fff;
     border-radius: 15px;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 10px 0px rgba(255,255,255,0.1);
 }
 
 .calculator button:active {
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px 0px rgba(255,255,255,0.1);
     transform: scale(0.98);
 }
 
 .calculator button:nth-child(4n) {
-    background-color: #6086d6;
+    background-color: #777;
     color: #fff;
 }
 
-.calculator button:nth-last-child(1), .calculator button:nth-last-child(2), .calculator button:nth-last-child(3) {
-    background-color: #4a69af;
+.calculator button:nth-last-child(1), .calculator button:nth-last-child(2), .calculator button:nth-last-child(3), .calculator button:nth-last-child(4) {
+    background-color: #888;
     color: #fff;
-}
-#history {
-    height: 30px;
-    margin-bottom: 10px;
-    text-align: right;
-    padding-right: 10px;
-    overflow: hidden;
-    font-size: 20px;
 }
 
 #cheat-sheet {
     margin-top: 20px;
     border-top: 1px solid #888;
     padding-top: 10px;
-    font-size: 20px;
-}
-
-.calculator button:nth-last-child(1), .calculator button:nth-last-child(2), .calculator button:nth-last-child(3), .calculator button:nth-last-child(4) {
-    background-color: #4a69af;
     color: #fff;
+    background-color: #444;
+    font-size: 20px;
 }
