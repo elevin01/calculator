@@ -61,7 +61,7 @@ body {
     color: #0D1117;
 }
 
-.calculator button.equals {
+.calculator button.trig {
     background-color: #1F6FEB;
     color: #0D1117;
 }
@@ -105,3 +105,13 @@ body {
 #history {
     display: none;
 }
+.calculator button.back {
+    background-color: #A58AFF;
+    color: #0D1117;
+}
+
+.calculator button.equals {
+    background-color: #FFA768;
+    color: #0D1117;
+}
+
