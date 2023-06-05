@@ -31,6 +31,10 @@ window.onload = function() {
                         display.value = "Error";
                     }
                     break;
+                    case 'back':
+                    display.value = display.value.slice(0, -1);
+                    break;
+
                 default:
                     display.value += e.target.innerText;
             }
