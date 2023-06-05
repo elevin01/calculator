@@ -35,7 +35,7 @@ body {
 
 .calculator button {
     height: 60px;
-    font-size: 24px;
+    font-size: 20px;
     border: none;
     outline: none;
     background-color: #c7c9d9;
@@ -54,7 +54,7 @@ body {
     color: #fff;
 }
 
-.calculator button:nth-last-child(1) {
+.calculator button:nth-last-child(1), .calculator button:nth-last-child(2), .calculator button:nth-last-child(3) {
     background-color: #4a69af;
     color: #fff;
 }
