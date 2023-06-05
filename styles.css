@@ -58,3 +58,23 @@ body {
     background-color: #4a69af;
     color: #fff;
 }
+#history {
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 10px;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+#cheat-sheet {
+    margin-top: 20px;
+    border-top: 1px solid #888;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.calculator button:nth-last-child(1), .calculator button:nth-last-child(2), .calculator button:nth-last-child(3), .calculator button:nth-last-child(4) {
+    background-color: #4a69af;
+    color: #fff;
+}

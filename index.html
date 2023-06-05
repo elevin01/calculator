@@ -5,8 +5,13 @@
 </head>
 <body>
     <div class="calculator">
+        <div id="history"></div>
         <input type="text" id="display" disabled>
         <div class="keys">
+            <button>(</button>
+            <button>)</button>
+            <button>C</button>
+            <button>back</button>
             <button>7</button>
             <button>8</button>
             <button>9</button>
@@ -26,8 +31,15 @@
             <button>sqrt</button>
             <button>^</button>
             <button>log</button>
-            <button>back</button>
-
+            <button>trig</button>
+        </div>
+        <div id="cheat-sheet" style="display:none;">
+            <h2>Useful Conversions</h2>
+            <p>1 inch = 2.54 centimeters</p>
+            <p>1 foot = 0.3048 meters</p>
+            <p>1 yard = 0.9144 meters</p>
+            <p>1 mile = 1.60934 kilometers</p>
+            <!-- add more conversions as necessary -->
         </div>
     </div>
     <script src="script.js"></script>
